@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Tab 1 + hede
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,32 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">TrustAss Özel</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-content>
+
+    <ion-content padding>
+      <p>
+          Sending a GET Request Example with Ionic 5
+          {{response}}
+      </p>
+       <button ion-button (click)="sendPostRequest()">Get Data</button>
+    </ion-content>
+
+    <ion-list>
+      <ion-title size="large">TrustAss Özel</ion-title>
+
+    </ion-list>
+
+
+    <ion-list>
+      <button ion-item *ngFor="let film of (films | async)?.results" >
+        {{ film.title }}
+      </button>
+    </ion-list>
+
+  </ion-content>
+
 </ion-content>

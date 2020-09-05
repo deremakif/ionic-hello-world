@@ -1,0 +1,7 @@
+{
+  "name": "trustAss",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
